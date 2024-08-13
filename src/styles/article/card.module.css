@@ -1,0 +1,49 @@
+.position {
+  position: relative;
+}
+
+.position::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: aliceblue;
+  transform: translateY(5rem);
+  z-index: -10;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+  gap: 1rem;
+  justify-items: center;
+  position: relative;
+}
+
+.card {
+  width: 20rem;
+  min-height: 30rem;
+  color: black;
+  background-color: aliceblue;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 100ms;
+  
+  & img {
+    width: 100%;
+  }
+
+  & h3 {
+    padding: 1rem;
+  }
+
+  & p {
+    padding: 1rem;
+  }
+}
+
+.card:hover {
+  background-color: black;
+  color: white;
+}
