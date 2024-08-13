@@ -1,0 +1,46 @@
+.container {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttom {
+  width: 8rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 1.3rem;
+  color: black;
+  border: solid .2rem black;
+}
+
+.buttom:hover {
+  color: black;
+}
+
+.container_link {
+  display: flex;
+  gap: 4rem;
+}
+
+.flex_link {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  & a {
+    color: black;
+  }
+
+  & a:hover {
+    color: black;
+  }
+}
