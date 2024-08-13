@@ -1,0 +1,53 @@
+.container_banner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+
+.felx_span_h1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container_links {
+  width: 2rem;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  & img {
+    width: 2rem;
+  }
+}
+
+.title {
+  font-size: 12rem;
+  margin: 0;
+}
+
+.message {
+  width: 19rem;
+
+  & h3 {
+    margin: 0;
+    font-weight: 700;
+  }
+
+  & p {
+    margin: 0;
+  }
+}
+
+.span_message {
+  writing-mode: vertical-rl;
+}
+
+.line {
+  min-width: 4rem;
+  height: .1rem;
+  background-color: black;
+}
