@@ -4,8 +4,8 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: #0e0e0e;
+  background-color: #ffd200;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -43,4 +43,9 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.layout {
+  width: 80%;
+  margin: 0 auto;
 }
