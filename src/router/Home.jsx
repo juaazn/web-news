@@ -1,12 +1,10 @@
 import Layout from '../layout/Layout'
-import Card from '../components/Card'
-import Banner from '../components/Banner'
+import BannerHome from '../components/BannerHome'
 
 export default function () {
   return (
     <Layout>
-      <Banner />
-      <Card />
+      <BannerHome />      
     </Layout> 
   )
 }
