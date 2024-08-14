@@ -1,0 +1,60 @@
+.container_banner {
+  margin: 2rem 0;
+  display: flex;
+}
+
+.content_banner {
+  width: 60%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner {
+  width: 100%;
+  height: 20rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & h1 {
+    color: #F1296B;
+    margin: 0;
+    font-size: 125px;
+    padding: 0 1rem;
+  }
+}
+
+.sub_banner {
+  width: 100%;
+  height: 20rem;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & p {
+    width: 28rem;
+    margin: 0;
+    padding: 0 1.5rem;
+    font-weight: 400;
+  }
+}
+
+.content_image {
+  margin: 0;
+  padding: 0;
+  width: 40%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(20rem, auto);
+
+  & img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+  }
+}
