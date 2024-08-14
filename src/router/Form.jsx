@@ -1,7 +1,9 @@
+import Layout from '../layout/Layout'
+
 export default function () {
   return (
-    <>
-      <h1>Form</h1>
-    </>
+    <Layout>
+      
+    </Layout>
   )
 }
