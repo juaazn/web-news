@@ -10,7 +10,6 @@ export default function Card () {
       const response = await fetch('https://api.nytimes.com/svc/news/v3/content/all/all.json?api-key=aqbSZcqI1bEGnQg8fZstWrTZtnME9L61')
       const data = await response.json()
       setArticle(data.results)
-      console.log(multimedia)
     } catch(err) {
       console.error(err)
     }
