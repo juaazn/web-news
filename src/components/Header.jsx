@@ -9,8 +9,8 @@ export default function () {
       <Logo />
       <div className={styles.container_link}>
         <ul className={styles.flex_link}>
-          <li><Link to='/'>Noticias</Link></li>
-          <li><Link to='/list'>Lista</Link></li>
+          <li><Link to='/'>Home</Link></li>
+          <li><Link to='/list'>Noticias</Link></li>
         </ul>
         <Buttom name='Únete'/>
       </div>
