@@ -7,6 +7,12 @@
   align-items: center;
 }
 
+.container_link {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
 .buttom {
   width: 8rem;
   height: 3rem;
@@ -17,16 +23,15 @@
   padding: 1.3rem;
   color: black;
   border: solid .2rem black;
+  transition: .5s background-color, color, border;
 }
 
 .buttom:hover {
-  color: black;
+  background-color: black;
+  color: white;
+  border: solid .1rem white;
 }
 
-.container_link {
-  display: flex;
-  gap: 4rem;
-}
 
 .flex_link {
   display: flex;
