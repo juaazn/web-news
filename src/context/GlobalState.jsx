@@ -1,5 +1,13 @@
-import React, { createContext, useReducer } from 'react'
+import { createContext, useState } from 'react'
 
-const initialState = {
-  
+export const DataApi = createContext()
+
+export function ArticleData ({ children }) {
+  const [article, setArticle] = useState([])
+
+  return (
+    <DataApi.Provider value={{article, setArticle}}>
+      { children }
+    </DataApi.Provider>
+  )
 }
