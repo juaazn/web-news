@@ -12,16 +12,18 @@ export default function Card () {
           filteredArticles.map((article) => {
             const highestResImage = getHighestResolutionImage(article.multimedia)
             return (
-              <section className={styles.card} key={article.uri}>
-                {highestResImage && (
-                  <img
-                    src={highestResImage.url}
-                    alt={highestResImage.caption || 'Article Image'}
-                  />
-                )}
-                <h3>{article.title}</h3>
-                <p>{article.abstract}</p>
-              </section>
+              <a href={article.url} key={article.uri} target="_blank" rel="noopener noreferrer">
+                  <section className={styles.card} key={article.uri}>
+                    {highestResImage && (
+                      <img
+                        src={highestResImage.url}
+                        alt={highestResImage.caption || 'Article Image'}
+                      />
+                    )}
+                    <h3>{article.title}</h3>
+                    <p>{article.abstract}</p>
+                  </section>
+              </a>
             )
           })
         }
