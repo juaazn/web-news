@@ -1,7 +1,7 @@
+import { Link } from 'react-router-dom'
 import Logo from './Logo'
 import styles from '../styles/Header/header.module.css'
 import Buttom from './Buttom'
-import { Link } from 'react-router-dom'
 
 export default function () {
   return (
