@@ -1,38 +1,9 @@
-import { useState, useEffect } from 'react'
 import styles from '../styles/article/card.module.css'
+import useApiNews from '../hooks/useApiNews'
 
 export default function Card () {
 
-  const [article, setArticle] = useState([])
-
-  const apiArticle = async () => {
-    try {
-      const response = await fetch('https://api.nytimes.com/svc/news/v3/content/all/all.json?api-key=aqbSZcqI1bEGnQg8fZstWrTZtnME9L61')
-      const data = await response.json()
-      setArticle(data.results)
-    } catch(err) {
-      console.error(err)
-    }
-  }
-
-  const getHighestResolutionImage = (multimedia) =>  {
-    if (!multimedia || multimedia.length === 0) return null
-
-    return multimedia.reduce((highestRes, current) => {
-      const currentResolution = current.width * current.height
-      const highestResolution = highestRes.width * highestRes.height
-
-      return currentResolution > highestResolution ? current : highestRes
-    })
-  }
-
-  const filteredArticles = article.filter(
-    (article) => article.title && article.abstract
-  )
-
-  useEffect(() => {
-    apiArticle()
-  }, [])
+  const { filteredArticles, getHighestResolutionImage } = useApiNews()
 
   return (
     <main className={styles.position}>
