@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './router/Home'
 import Form from './router/Form'
 import List from './router/List'
+import { ArticleData } from './context/globalState'
 import './layout.css'
 
 const router = createBrowserRouter([
@@ -23,6 +24,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <ArticleData>
+      <RouterProvider router={router} />
+    </ArticleData >
   </React.StrictMode>,
 )
