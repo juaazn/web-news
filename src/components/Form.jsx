@@ -1,23 +1,8 @@
-import { useState  } from 'react'
+import useData from '../hooks/useData.js'
 import styles from '../styles/form/from.module.css'
 
-export default function () {
-  const initialState = { username: '', email: '' }
-  const [data, setData] = useState({ username: '', email: '' })
-
-   const handleInput = (event) => {
-      setData({ ...data, [event.target.name]: event.target.value })
-   }
-
-  const clearState = () => {
-    setData({ ...initialState })
-  }
-
-  const handleSubmit  = (event) => {
-    event.preventDefault()
-    window.localStorage.setItem('user', JSON.stringify(data))
-    clearState()
-  }
+export default function Form () {
+  const { data, handleInput, handleSubmit } = useData()
 
   return (
     <section className={styles.container_form}>
@@ -26,8 +11,8 @@ export default function () {
         <p>Subscribe to access the latest news quickly and easily with just one click.</p>
       </div>
       <form className={styles.form} onSubmit={handleSubmit}>
-        <input type="text" name='username' onChange={handleInput} placeholder='Name'/>
-        <input id="email" type="email" name='email' onChange={handleInput} placeholder='Email'/>
+        <input type="text" name='username' onChange={handleInput} placeholder='Name' autoComplete='name' value={data.username}/>
+        <input type="email" name='email' onChange={handleInput} placeholder='Email' autoComplete='email' value={data.email}/>
         <input type="submit" />
       </form>
     </section>
