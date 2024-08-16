@@ -5,6 +5,7 @@ import Home from './router/Home'
 import Form from './router/Form'
 import List from './router/List'
 import { ArticleData } from './context/globalState'
+import { SusbcribeGlobalContext } from './context/subcribeContext'
 import './layout.css'
 
 const router = createBrowserRouter([
@@ -25,7 +26,9 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ArticleData>
-      <RouterProvider router={router} />
+      <SusbcribeGlobalContext>
+        <RouterProvider router={router} />
+      </SusbcribeGlobalContext>
     </ArticleData >
   </React.StrictMode>,
 )
