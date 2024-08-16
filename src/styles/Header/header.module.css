@@ -68,3 +68,50 @@
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 768px) {
+  .container_link {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+
+  .flex_link {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    transition: border .3s;
+  
+    & a {
+      color: black;
+    }
+  
+    & a:hover {
+      color: black;
+      border-bottom: .1rem solid black;
+    }
+  }
+
+  .buttom {
+    width: 6rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1.3rem;
+    color: black;
+    border: solid .2rem black;
+    transition: .5s background-color, color, border;
+    font-size: .9rem;
+  }
+
+  .buttom:hover {
+    background-color: black;
+    color: white;
+    border: solid .1rem white;
+  }
+}
