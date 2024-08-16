@@ -51,3 +51,65 @@
   height: .1rem;
   background-color: black;
 }
+
+@media (max-width: 768px) {
+  .container_banner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+  
+  .title {
+    font-size: 6rem;
+    margin: 0;
+  }
+
+  .container_links {
+    width: 2rem;
+    margin: 1rem 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+    order: 3;
+  
+    & img {
+      width: 2rem;
+    }
+  }
+
+  .felx_span_h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .span_message {
+    width: 4rem;
+    display: flex;
+    gap: 2rem;
+    writing-mode: vertical-lr;
+
+    & p {
+      margin: 0;
+    }
+  }
+
+  .message {
+    width: 19rem;
+  
+    & h3 {
+      margin: 0;
+      font-weight: 700;
+    }
+  
+    & p {
+      margin: .8rem 0;
+      font-size: 1.1rem;
+    }
+  }
+}
