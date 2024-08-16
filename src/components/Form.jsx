@@ -8,7 +8,7 @@ export default function Form () {
     <section className={styles.container_form}>
       <div className={styles.content}>
         <h1>Subscribe to more newsletters</h1>
-        <p>Subscribe to access the latest news quickly and easily with just one click.</p>
+        <p>🚀 Subscribe to access the latest news quickly and easily with just one click. 📰</p>
       </div>
       <form className={styles.form} onSubmit={handleSubmit}>
         <input type="text" name='username' onChange={handleInput} placeholder='Name' autoComplete='name' value={data.username}/>
