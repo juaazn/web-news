@@ -40,6 +40,7 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  transition: border .3s;
 
   & a {
     color: black;
@@ -47,5 +48,23 @@
 
   & a:hover {
     color: black;
+    border-bottom: .1rem solid black;
   }
+}
+
+.disabled_button {
+  user-select: none;
+  font-weight: bold;
+  color: rgb(57, 57, 57);
+  animation: move;
+  animation-duration: 3s;
+}
+
+.disabled_button:hover::after {
+  width: 3rem;
+  content: '¡SUBSCRIBE!';
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
