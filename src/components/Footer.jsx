@@ -4,7 +4,7 @@ export default function Footer () {
   return (
     <footer className={styles.container}>
       <div className={styles.content}>
-        <img src="/logo.svg" alt="Logo" />
+        <img src="./logo.svg" alt="Logo" />
         <h4>Newspaper</h4>
       </div>
       <div>

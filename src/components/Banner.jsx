@@ -4,10 +4,10 @@ export default function Banner () {
   return (
     <article className={style.container_banner}>
       <figure className={style.container_links}>
-        <a href="https://www.nytimes.com/international/" target="_blank" rel="noopener noreferrer"><img src="/news.svg" alt="" /></a>
-        <a href="https://x.com/home" target="_blank" rel="noopener noreferrer"><img src="/twitter.svg" alt="Logo svg" /></a>
-        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img src="/instagram.svg" alt="Logo Instagram" /></a>
-        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img src="/github.svg" alt="Logo GitHub" /></a>
+        <a href="https://www.nytimes.com/international/" target="_blank" rel="noopener noreferrer"><img src="./news.svg" alt="" /></a>
+        <a href="https://x.com/home" target="_blank" rel="noopener noreferrer"><img src="./twitter.svg" alt="Logo svg" /></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img src="./instagram.svg" alt="Logo Instagram" /></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img src="./github.svg" alt="Logo GitHub" /></a>
       </figure>
       <section className={style.felx_span_h1}>
         <span className={style.span_message}>
