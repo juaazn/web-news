@@ -10,15 +10,15 @@ import './layout.css'
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/web-news/',
     element: <Home />
   },
   {
-    path: '/form',
+    path: '/web-news/form',
     element: <Form />
   },
   {
-    path: '/list',
+    path: '/web-news/list',
     element: <List />
   }
 ])
@@ -27,7 +27,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ArticleData>
       <SusbcribeGlobalContext>
-        <RouterProvider router={router} basename="/web-news" />
+        <RouterProvider router={router} />
       </SusbcribeGlobalContext>
     </ArticleData >
   </React.StrictMode>,
