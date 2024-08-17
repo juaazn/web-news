@@ -3,10 +3,10 @@ import { DataApi } from '../context/globalState'
 
 export default function useApiNews () {
   const { article, setArticle } = useContext(DataApi)
-  
+
   const apiArticle = async () => {
     try {
-      const response = await fetch('https://api.nytimes.com/svc/news/v3/content/all/all.json?api-key=aqbSZcqI1bEGnQg8fZstWrTZtnME9L61')
+      const response = await fetch(`https://api.nytimes.com/svc/news/v3/content/all/all.json?api-key=${import.meta.env.VITE_API_KEY}`)
       const data = await response.json()
       setArticle(data.results)
     } catch(err) {
