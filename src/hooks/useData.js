@@ -25,7 +25,7 @@ export default function useData () {
     event.preventDefault()
     window.localStorage.setItem(`${data.username}`, JSON.stringify(data))
     clearState()
-    navigate('/list')
+    navigate('/web-news/list')
     checkSubcribe()
   }
 
