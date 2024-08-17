@@ -27,7 +27,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ArticleData>
       <SusbcribeGlobalContext>
-        <RouterProvider router={router} />
+        <RouterProvider router={router} basename="/web-news" />
       </SusbcribeGlobalContext>
     </ArticleData >
   </React.StrictMode>,
