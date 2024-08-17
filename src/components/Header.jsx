@@ -13,10 +13,10 @@ export default function () {
       <Logo />
       <div className={styles.container_link}>
         <ul className={styles.flex_link}>
-          <li><Link to='/'>Home</Link></li>
+          <li><Link to='/web-news/'>Home</Link></li>
           { 
             subcribe === true ?
-              <li><Link to='/list'>News</Link></li>
+              <li><Link to='/web-news/list'>News</Link></li>
               : <p className={styles.disabled_button}>News</p>
           }
         </ul>
